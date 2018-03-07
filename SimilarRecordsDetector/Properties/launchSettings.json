@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimilarRecordsDetector": {
+      "commandName": "Project",
+      "commandLineArgs": "-db \"Data Source=tcp:cool-shop-server.database.windows.net,1433;Initial Catalog=cool-shop;User ID=shopadmin;Password=CoolAdmin1\" -c \"id name\""
+    }
+  }
+}
