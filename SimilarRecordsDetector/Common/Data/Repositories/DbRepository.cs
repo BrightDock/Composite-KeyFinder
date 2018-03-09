@@ -5,13 +5,17 @@ using SimilarRecordsDetector.Common.Data.Context;
 
 namespace SimilarRecordsDetector.Common.Data.Repositories
 {
-    public class RepositoryBase : IRepositoryBase
+    /// <summary>
+    /// The repository for database.
+    /// </summary>
+    /// <seealso cref="SimilarRecordsDetector.Common.Core.Interfaces.Repositories.IDbRepository" />
+    public class DbRepository : IDbRepository
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RepositoryBase"/> class.
+        /// Initializes a new instance of the <see cref="DbRepository"/> class.
         /// </summary>
         /// <param name="unitOfwork">The unit ofwork.</param>
-        public RepositoryBase(IUnitOfWork unitOfwork)
+        public DbRepository(IUnitOfWork unitOfwork)
         {
             this.DataContext = unitOfwork.DataContext as SRDDbContext;
         }

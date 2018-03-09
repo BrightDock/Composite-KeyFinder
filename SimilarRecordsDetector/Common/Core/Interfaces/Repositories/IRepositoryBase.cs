@@ -1,9 +1,9 @@
-﻿using SimilarRecordsDetector.Common.Data.Context;
+﻿using System.Collections.Generic;
 
 namespace SimilarRecordsDetector.Common.Core.Interfaces.Repositories
 {
     public interface IRepositoryBase
     {
-        SRDDbContext DataContext { get; }
+        List<string> GetHeadersAndData();
     }
 }

@@ -2,7 +2,7 @@
   "profiles": {
     "SimilarRecordsDetector": {
       "commandName": "Project",
-      "commandLineArgs": "-db \"Data Source=tcp:cool-shop-server.database.windows.net,1433;Initial Catalog=cool-shop;User ID=shopadmin;Password=CoolAdmin1\" -c \"id name\""
+      "commandLineArgs": "-csv \"C:\\Users\\Dmitr\\source\\repos\\SimilarRecordsDetector\\SimilarRecordsDetector\\bin\\Debug\\Discounts.csv\" \"C:\\Users\\Dmitr\\source\\repos\\SimilarRecordsDetector\\SimilarRecordsDetector\\bin\\Debug\\Discounts-Copy.csv\" -db \"Data Source=tcp:cool-shop-server.database.windows.net,1433;Initial Catalog=cool-shop;User ID=shopadmin;Password=CoolAdmin1\" -c id name -t categories -fc fd gr -db -dc gfad"
     }
   }
 }
